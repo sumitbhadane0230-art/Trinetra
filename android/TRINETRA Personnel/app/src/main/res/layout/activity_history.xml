@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/trinetra_background"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wellness History"
+        android:textColor="@color/trinetra_text"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Your previous wellness check-ins"
+        android:textColor="@color/trinetra_secondary_text"
+        android:textSize="15sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvHistoryEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="32dp"
+        android:text="No wellness check-ins yet."
+        android:textColor="@color/trinetra_secondary_text"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</LinearLayout>

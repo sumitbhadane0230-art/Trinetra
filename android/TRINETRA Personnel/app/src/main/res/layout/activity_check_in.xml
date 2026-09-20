@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07131A"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wellness Check-In"
+            android:textColor="#E8F0EE"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="There are no right or wrong answers. Just share how you're feeling."
+            android:textColor="#AEBDBA"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="How did you sleep?"
+            android:textColor="#E8F0EE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderSleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="12"
+            android:stepSize="0.5"
+            android:value="7" />
+
+        <TextView
+            android:id="@+id/tvSleepValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7 hours"
+            android:textColor="#5FB8B5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Sleep quality"
+            android:textColor="#E8F0EE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderSleepQuality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="1"
+            android:valueTo="5"
+            android:stepSize="1"
+            android:value="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Current stress level"
+            android:textColor="#E8F0EE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderStress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="1"
+            android:valueTo="5"
+            android:stepSize="1"
+            android:value="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Fatigue level"
+            android:textColor="#E8F0EE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderFatigue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="1"
+            android:valueTo="5"
+            android:stepSize="1"
+            android:value="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="How is your mood?"
+            android:textColor="#E8F0EE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="1"
+            android:valueTo="5"
+            android:stepSize="1"
+            android:value="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Do you feel recovered?"
+            android:textColor="#E8F0EE"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderRecovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="1"
+            android:valueTo="5"
+            android:stepSize="1"
+            android:value="3" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Optional note"
+            app:boxBackgroundMode="outline">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNote"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="top"
+                android:inputType="textCapSentences|textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmitCheckIn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="Submit Check-In"
+            android:textAllCaps="false"
+            app:backgroundTint="#1F6F70"
+            app:cornerRadius="18dp" />
+
+    </LinearLayout>
+
+</ScrollView>

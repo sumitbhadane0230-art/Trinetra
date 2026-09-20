@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="trinetra_background">#07131A</color>
+    <color name="trinetra_surface">#0D2429</color>
+    <color name="trinetra_primary">#1F6F70</color>
+    <color name="trinetra_soft_primary">#5FB8B5</color>
+
+    <color name="trinetra_text">#E8F0EE</color>
+    <color name="trinetra_secondary_text">#AEBDBA</color>
+
+    <color name="white">#FFFFFF</color>
+
+</resources>

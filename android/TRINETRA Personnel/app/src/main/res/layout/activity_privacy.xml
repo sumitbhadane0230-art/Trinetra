@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trinetra_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Privacy"
+            android:textColor="@color/trinetra_text"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="TRINETRA Personnel is designed to keep the personnel experience focused on wellness and support."
+            android:textColor="@color/trinetra_secondary_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Your self-reported check-in history is stored locally by this prototype on the device. The check-in information needed for the existing TRINETRA backend is sent to the configured FastAPI service."
+            android:textColor="@color/trinetra_secondary_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="The current prototype does not implement production authentication, encrypted backend transport, or persistent server-side personnel history. These should be added before operational deployment."
+            android:textColor="@color/trinetra_secondary_text"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</ScrollView>

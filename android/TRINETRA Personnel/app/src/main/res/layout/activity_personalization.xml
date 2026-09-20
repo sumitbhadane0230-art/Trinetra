@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trinetra_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Personalize your profile"
+            android:textColor="@color/trinetra_text"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="These details help TRINETRA understand your service context. They are used as inputs to the existing wellness-risk pipeline."
+            android:textColor="@color/trinetra_secondary_text"
+            android:textSize="14sp" />
+
+        <!-- BASIC PROFILE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Profile"
+            android:textColor="@color/trinetra_soft_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRole"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:hint="Role category"
+            android:inputType="text"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etPosting"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Posting type"
+            android:inputType="text"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etTenure"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Service tenure (months)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <!-- WORKLOAD -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Work routine"
+            android:textColor="@color/trinetra_soft_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etDuty"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:hint="Duty hours per week"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etOvertime"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Overtime hours"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etNight"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Night shifts"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etConsecutive"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Consecutive duty days"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etRest"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Average rest hours"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etTraining"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Training hours"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <!-- DEPLOYMENT -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Deployment &amp; leave"
+            android:textColor="@color/trinetra_soft_primary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etDeployment"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:hint="Current deployment days"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etDaysSinceDeployment"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Days since last deployment"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etDeploymentCount"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Recent deployment count"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etLeave"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Leave days taken"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <EditText
+            android:id="@+id/etDaysSinceLeave"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:hint="Days since last leave"
+            android:inputType="numberDecimal"
+            android:textColor="@color/trinetra_text"
+            android:textColorHint="@color/trinetra_secondary_text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFinish"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:text="Finish setup"
+            android:textSize="16sp"
+            app:cornerRadius="18dp" />
+
+    </LinearLayout>
+
+</ScrollView>

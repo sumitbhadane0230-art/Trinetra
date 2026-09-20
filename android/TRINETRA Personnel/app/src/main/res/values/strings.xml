@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TRINETRA Personnel</string>
+
+    <string name="welcome_title">Your wellbeing, your space</string>
+    <string name="welcome_subtitle">A private wellness companion for personnel.</string>
+
+    <string name="checkin_title">Wellness check-in</string>
+
+    <string name="privacy_title">Privacy</string>
+
+</resources>
